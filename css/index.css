@@ -66,11 +66,13 @@ p {
     line-height: 1.4;
 }
 
-.container {
+/* PAGE CONTAINER */
+.container { 
     width: 800px;
     margin: 0 auto;
 }
 
+/* HEADER STYLES */
 header {
     display: flex;
     justify-content: flex-start;
@@ -101,12 +103,7 @@ div.header-image {
     background-size: cover;
 }
 
-div.about-image {
-    background-image: url('../img/jumbo-about.png');
-    width: 100%;
-    height: 153px;
-}
-
+/* HOME PAGE TOP CONTENT STYLES */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -120,6 +117,8 @@ div.about-image {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+
+/* HOME PAGE MIDDLE CONTENT STYLES */
 
 .middle-content {
     margin-bottom: 20px;
@@ -148,6 +147,7 @@ div.about-image {
     justify-content: center;
 }
 
+/* HOME PAGE BOTTOM CONTENT STYLES */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -162,6 +162,7 @@ div.about-image {
     padding-right: 0;
 }
 
+/* FOOTER STYLES */
 footer {
     width: 100%;
     background: black;
@@ -181,6 +182,7 @@ footer nav a {
     text-decoration: none;
 }
 
+/* HOME PAGE BOXES STYLES */
 .boxes .box:nth-of-type(1){
     background: teal;
 }
@@ -221,15 +223,33 @@ footer nav a {
     background: dodgerblue;
 }
 
+/* ====ABOUT PAGE STYLES==== */
+div.about-image {
+    background-image: url('../img/jumbo-about.png');
+    width: 100%;
+    height: 153px;
+}
+
 .about-page {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-content: space-between;
     width: 100%;
-    /* overflow: hidden; */
 }
 
+/* INFO TILE STYLES */
+.about-page .info-tile {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.about-page .info-tile:nth-of-type(1) {
+    border-bottom: 1px dashed black;
+}
+
+/* TILE STYLES */
 .about-page .tile {
     display: flex;
     flex-flow: column wrap;
@@ -237,24 +257,12 @@ footer nav a {
     width: 50%;
     align-items: flex-start;
     padding: 10px;
-    /* border-bottom: 2px dotted black; */
     margin-top: 5%;
     overflow: hidden;
 }
 
 .about-page .tile h3 {
     margin-top: 3%;
-}
-
-.about-page .info-tile {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-    margin-bottom: 3%;
-}
-
-.about-page .info-tile:nth-of-type(1) {
-    border-bottom: 2px dotted black;
 }
 
 .tile a {
@@ -269,7 +277,12 @@ footer nav a {
     text-align: center;
 }
 
+.tile p {
+    margin-bottom: 3%;
+}
+
 .tile hr {
-    border-bottom: 2px dotted black;
-    width: 100%;
+    border-top: transparent;
+    border-bottom: 1px dashed black;
+    width: 98%;
 }
